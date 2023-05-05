@@ -1,0 +1,109 @@
+*{
+    --backpage: #fff;
+    --headcolor: #13293d;
+    --setradius: 50px;
+    --scarlet: #BB0000;
+    --grey: #666666;
+  }
+  
+  body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    background: var(--headcolor);
+    color: var(--backpage);
+  }
+  
+  nav {
+    display: flex;
+    background-color: #d8a47f;
+  }
+  
+  nav a {
+    color: var(--headcolor);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    background-color: var(--backpage);
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--headcolor);
+    color: var(--backpage);
+    margin-top: auto;
+  }
+  
+  .products {
+    flex: 1;
+    background-color: var(--backpage);
+    padding: var(--setradius);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--setradius);
+    padding: 10px;
+    flex: 0 0 300px;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+  }
+  
+  .card > header {
+    border-radius: var(--setradius) var(--setradius) 0px 0px;
+    padding: 20px;
+  }
+  
+  .card > p {
+    text-align: center;
+  }
+  
+  .card > img {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
+
+  /*ADDING STARTS HERE */
+.card:hover {
+  box-shadow: inset 0px 0px 8px var(--scarlet), 0 0 15px var(--scarlet);
+}
