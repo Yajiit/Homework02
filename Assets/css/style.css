@@ -5,7 +5,7 @@
     --scarlet: #BB0000;
     --grey: #666666;
     --black: #000;
-    --stripeheight: 6px;
+    --stripeheight: 11px;
   }
   
   body {
@@ -39,14 +39,14 @@
   }
   
   nav a {
-    color: var(--headcolor);
+    color: var(--white);
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
   }
   
   nav a:hover {
-    background-color: var(--white);
+    background-color: var(--grey);
   }
   
   main {
@@ -122,4 +122,8 @@ height: calc(var(--stripeheight) + var(--stripeheight));
 width: 100%;
 background-color:var(--white);
 }
-/* COLOR STRIPE END
+/* COLOR STRIPE END */
+
+nav a:active{
+  background-color:var(--black);
+}
