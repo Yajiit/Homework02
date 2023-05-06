@@ -75,6 +75,7 @@
     /*added*/
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
   }
   
   .card {
@@ -86,6 +87,8 @@
     transform: rotate(0deg);
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
+    /*added*/
+    
   }
   
   .card > header {
@@ -113,6 +116,7 @@
 .card:hover {
   box-shadow: inset 0px 0px 8px var(--scarlet), 0 0 15px var(--scarlet);
 }
+
 
 /* COLOR STRIPE START */
 .black-stripe{
@@ -145,7 +149,33 @@ nav a:active{
   margin: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .cardone {
+    max-width:300px;
+    height:600px;
+  }
+  .cardone img {max-width:185px}
+}
+
+.cardone > header {
+  border-radius: var(--setradius) var(--setradius) 0px 0px;
+  padding: 20px;
+}
+
+.cardone > p {
+  text-align: center;
+}
+
+.cardone > img {
+  width: 100%;
+}
+/*/
+
 /* ABOUT ME STYLING */
-.about {
-  width:40px;
+.about p {
+  color:(var(--white))
+}
+
+main {
+  background-color: var(--grey);
 }
