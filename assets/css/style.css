@@ -1,0 +1,61 @@
+/* COLOR CONTROL START */
+*{
+    --bg:#666666;
+    --bgtext:#fff;
+    --scarlet:#ff0000;
+}
+
+
+/* COLOR CONTROL END   */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    background-color:var(--bg);
+    color:var(--bgtext);
+  }
+  
+
+  /* HEADER STYLE START */
+  header {
+    text-align: center;
+    margin-top: 32px;
+  }
+  
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+  /* HEADER STYLE END   */
+
+  /* NAV STYLE START */
+  nav {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 32px;
+    padding: 12px;
+  }
+  
+  nav a:hover {
+    color:var(--scarlet);
+  }
+  /* NAV STYLE END   */
+
+
+  
+
