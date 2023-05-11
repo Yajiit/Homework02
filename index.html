@@ -2,50 +2,85 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My Website</title>
+	<title>TJ's Portfolio Webpage</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
 </head>
+
+
 <body>
+  <!-- HEADER START -->
 	<header>
 		<h1>T.J. Agerter</h1>
 		<h2>Welcome to my Portfolio page!</h2>
 	</header>
+<!-- HEADER END -->
+
+<!-- STRIPES BETWEEN HEADER AND NAV -->
+  <section class="black-stripe"></section>
+  <section class="white-stripe"></section>
+
+  <!-- NAVBAR START -->
 	<nav>
 		<a href="#about-sect">About Me</a>
 		<a href="#portfolio-sect">Portfolio</a>
 		<a href="#contact-sect">Contact Me</a>
 	</nav>
-	<section id="about-section">
+  <!-- NAVBAR END -->
+
+  <!-- STRIPES BETWEEN NAV AND BODY -->
+  <section class="white-stripe"></section>
+  <section class="black-stripe"></section>
+
+  <!-- ABOUT ME START -->
+	<section id="about-sect">
+    <div class="chapter">
 			<h3 class="sect-name">About Me</h3>
 			<p>I am a student taking a full stack software development bootcamp! :)</p>
+    </div>
 	</section>
+<!-- ABOUT ME END -->
 
+<!-- PORTFOLIO LINKS START -->
     <section id="portfolio-sect">
-        <h3 class="sect-name">Portfolio</h3>
+      <div class="chapter">  
+      <h3 class="sect-name">Portfolio</h3>
         <section class="portfolio-buttons">
           <section class="portfolio-button">
-            <a href="https://yajiit.github.io/Homework01/"><img src="./assets/01 Homework Horiseon Info Page.jpg" alt="Link to first homework, Horiseon Solutions webpage."></a>
+            <a href="https://yajiit.github.io/Homework01/"><img src="./assets/images/01 Homework Horiseon Info Page.jpg" alt="Link to first homework, Horiseon Solutions webpage."></a>
             <p>1st Homework, Horiseon Solutions Webpage</p>
           </section>
           <section class="portfolio-button">
-            <a href="page2.html"><img src="./assets/02 Picture.jpg" alt="Second visual link"></a>
-            <p>Placeholder button</p>
+            <a href="https://yajiit.github.io/prework-study-guide/"><img src="./assets/images/02Prework Study Guide.jpg" alt="Link to Prework Study Guide"></a>
+            <p>Prework Study Guide</p>
           </section>
           <section class="portfolio-button">
             <a href="page3.html"><img src="./assets/03 Picture.jpg" alt="Third visual link"></a>
             <p>Another placeholder link</p>
           </section>
         </section>
+      </div>
       </section>
-  
+  <!-- PORTFOLIO LINKS END -->
+
+      <!-- FOOTER STRIPES -->
+  <!-- <section class="black-stripe"></section>
+  <section class="white-stripe"></section>
+  <section class="scarlet-stripe"></section>
+  <section class="white-stripe"></section>
+  <section class="black-stripe"></section> -->
+
+  <!-- CONTACT ME START -->
       <section id="contact-sect">
+        <div class="chapter">
         <h3 class="sect-name">Contact Me</h3>
         <section class="contact-me">
           <a href="https://github.com/Yajiit">Github</a>
           <a href="mailto:tjagerter@gmail.com">Email</a>
         </section>
+        </div>
       </section>
+      <!-- CONTACT ME END -->
     </section>
   </body>
   </html>

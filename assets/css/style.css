@@ -1,22 +1,25 @@
-/* COLOR CONTROL START */
+/* VARIABLE CONTROL START */
 *{
     --bg:#666666;
     --bgtext:#fff;
     --scarlet:#ff0000;
+    --stripeheight:11px;
 }
 
 
-/* COLOR CONTROL END   */
 
+/* VARIABLE CONTROL END   */
+
+/* BODY STYLE START */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
-    background-color:var(--bg);
-    color:var(--bgtext);
+    background-color:#666;
+    color:var#fff;
   }
-  
+  /* BODY STYLE END   */
 
   /* HEADER STYLE START */
   header {
@@ -42,20 +45,130 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color:#f00;
   }
   
   nav a {
-    color: #fff;
+    color:#000;
     text-decoration: none;
     margin-right: 32px;
-    padding: 12px;
+    padding: 13px 32px 14px 32px;
   }
   
   nav a:hover {
-    color:var(--scarlet);
+    color:#fff;
+    background-color:#666;
   }
+
+  nav a:active{
+    background-color:#000;
+  }
+  
   /* NAV STYLE END   */
 
 
-  
+  /* SECTION TITLE STYLE START */
+  .sect-name {
+    font-size: 40px;
+    margin-bottom: 24px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* SECTION TITLE STYLE END   */
 
+
+  /* LARGE SCREEN STYLE START  */
+  @media screen and (min-width:769px){
+    
+
+  .chapter {
+    display:flex;
+    align-items: flex-start;
+  }
+  }
+  /* LARGE SCREEN STYLE END   */
+
+
+  section#about-sect div.chapter > p, .contact-me {
+    margin: 16px 0;
+  }  
+
+
+/* SMALL SCREEN STYLE START */
+  @media screen and (max-width: 768px) {
+    .sect-name {
+      display: block;
+      text-align: center;
+    }
+
+    section#about-sect div.chapter > p, .contact-me, nav{
+      text-align: center;
+    }
+
+    .portfolio-buttons {
+      flex-direction: column;
+    }
+
+    .portfolio-button {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-button img {
+      display: block;
+      margin: auto;
+    }
+
+    .portfolio-button p {
+      margin-top: 10px;
+    }
+  }
+/* SMALL SCREEN STYLE END   */
+
+/* PORTFOLIO BUTTON STYLE START */
+.portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-button {
+  margin-right: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  width: 200px;
+}
+
+.portfolio-button:first-child {
+  width: 400px;
+}
+
+.portfolio-button img {
+  max-width: 100%;
+}
+
+.portfolio-button p {
+  font-size: 18px;
+}
+/* PORTFOLIO BUTTON STYLE END   */
+
+
+/* COLOR STRIPE START */
+.black-stripe{
+  height: var(--stripeheight);
+  background-color:#000;
+}
+
+.white-stripe{
+height: calc(var(--stripeheight) + var(--stripeheight));
+width: 100%;
+background-color:#fff;
+}
+
+/* .scarlet-stripe{
+  height:44px;
+  width: 100%;
+  background-color:#f00; 
+ } */
+/* COLOR STRIPE END */
