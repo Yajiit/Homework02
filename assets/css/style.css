@@ -1,7 +1,5 @@
 /* VARIABLE CONTROL START */
 *{
-    --bg:#666666;
-    --bgtext:#fff;
     --scarlet:#ff0000;
     --stripeheight:11px;
 }
@@ -17,12 +15,13 @@ body {
     line-height: 1.5;
     margin: 0;
     background-color:#666;
-    color:var#fff;
+    color:#fff;
   }
-  /* BODY STYLE END   */
+/* BODY STYLE END   */
 
-  /* HEADER STYLE START */
+/* HEADER STYLE START */
   header {
+    color:#fff;
     text-align: center;
     margin-top: 32px;
   }
@@ -37,9 +36,22 @@ body {
     font-size: 28px;
     margin-bottom: 60px;
   }
-  /* HEADER STYLE END   */
+/* HEADER STYLE END   */
 
-  /* NAV STYLE START */
+/* COLOR STRIPE START */
+.black-stripe{
+  height: var(--stripeheight);
+  background-color:#000;
+}
+
+.white-stripe{
+height: calc(var(--stripeheight) + var(--stripeheight));
+width: 100%;
+background-color:#fff;
+}
+/* COLOR STRIPE END   */
+
+/* NAV STYLE START */
   nav {
     padding: 10px;
     position: sticky;
@@ -51,7 +63,6 @@ body {
   nav a {
     color:#000;
     text-decoration: none;
-    margin-right: 32px;
     padding: 13px 32px 14px 32px;
   }
   
@@ -64,33 +75,74 @@ body {
     background-color:#000;
   }
   
-  /* NAV STYLE END   */
+/* NAV STYLE END   */
 
 
-  /* SECTION TITLE STYLE START */
+/* SECTION TITLE STYLE START */
   .sect-name {
     font-size: 40px;
-    margin-bottom: 24px;
+    margin: 24px 36px;
     display: inline-block;
     vertical-align: top;
   }
-  /* SECTION TITLE STYLE END   */
+/* SECTION TITLE STYLE END   */
 
 
-  /* LARGE SCREEN STYLE START  */
+
+/* PORTFOLIO BUTTON STYLE START */
+.portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-button {
+  margin-right: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  width: 200px;
+}
+
+.portfolio-button:first-child {
+  width: 400px;
+}
+
+.portfolio-button:first-child::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.portfolio-button img {
+  max-width: 100%;
+}
+
+.portfolio-button p {
+  font-size: 18px;
+}
+/* PORTFOLIO BUTTON STYLE END   */
+
+/* LARGE SCREEN STYLE START  */
   @media screen and (min-width:769px){
     
+    nav a {
+      margin-right: 32px;
+    }
 
-  .chapter {
-    display:flex;
-    align-items: flex-start;
-  }
+   .chapter {
+      display:flex;
+      align-items: flex-start;
+    }
+
+    h3#portfolio-name-small {
+      display:none;
+    }
   }
   /* LARGE SCREEN STYLE END   */
 
 
   section#about-sect div.chapter > p, .contact-me {
-    margin: 16px 0;
+    margin: 40px 0;
   }  
 
 
@@ -103,6 +155,10 @@ body {
 
     section#about-sect div.chapter > p, .contact-me, nav{
       text-align: center;
+    }
+
+    h3#portfolio-name-big {
+      display:none;
     }
 
     .portfolio-buttons {
@@ -124,51 +180,3 @@ body {
     }
   }
 /* SMALL SCREEN STYLE END   */
-
-/* PORTFOLIO BUTTON STYLE START */
-.portfolio-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.portfolio-button {
-  margin-right: 20px;
-  margin-bottom: 0;
-  text-align: center;
-  width: 200px;
-}
-
-.portfolio-button:first-child {
-  width: 400px;
-}
-
-.portfolio-button img {
-  max-width: 100%;
-}
-
-.portfolio-button p {
-  font-size: 18px;
-}
-/* PORTFOLIO BUTTON STYLE END   */
-
-
-/* COLOR STRIPE START */
-.black-stripe{
-  height: var(--stripeheight);
-  background-color:#000;
-}
-
-.white-stripe{
-height: calc(var(--stripeheight) + var(--stripeheight));
-width: 100%;
-background-color:#fff;
-}
-
-/* .scarlet-stripe{
-  height:44px;
-  width: 100%;
-  background-color:#f00; 
- } */
-/* COLOR STRIPE END */
