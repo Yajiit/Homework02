@@ -1,8 +1,11 @@
-/* VARIABLE CONTROL START */
+/* COLOR SCHEME START */
 *{
-    --stripeheight:11px;
+  --SCARLET:#f00;
+  --GREY:#666;
+  --WHITE:#fff;
+  --BLACK:#000;
 }
-/* VARIABLE CONTROL END   */
+/* COLOR SHEME END   */
 
 /* BODY STYLE START */
 body {
@@ -10,14 +13,14 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
-    background-color:#666;
-    color:#fff;
+    background-color:var(--GREY);
+    color:var(--WHITE);
   }
 /* BODY STYLE END   */
 
 /* HEADER STYLE START */
   header {
-    color:#fff;
+    color:var(--WHITE);
     text-align: center;
     margin-top: 32px;
   }
@@ -36,14 +39,14 @@ body {
 
 /* COLOR STRIPE START */
 .black-stripe{
-  height: var(--stripeheight);
-  background-color:#000;
+  height: 11px;
+  background-color:var(--BLACK);
   }
 
   .white-stripe{
-  height: calc(var(--stripeheight) + var(--stripeheight));
+  height: 22px;
   width: 100%;
-  background-color:#fff;
+  background-color:var(--WHITE);
   }
 /* COLOR STRIPE END   */
 
@@ -53,22 +56,22 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color:#f00;
+    background-color:var(--SCARLET);
   }
   
   nav a {
-    color:#000;
+    color:var(--BLACK);
     text-decoration: none;
     padding: 13px 32px 14px 32px;
   }
   
   nav a:hover {
-    color:#fff;
-    background-color:#666;
+    color:var(--WHITE);
+    background-color:var(--GREY);
   }
 
   nav a:active{
-    background-color:#000;
+    background-color:var(--BLACK);
   }
   
 /* NAV STYLE END   */
@@ -80,6 +83,7 @@ body {
     margin: 24px 36px;
     display: inline-block;
     vertical-align: top;
+    white-space: nowrap;
   }
 /* SECTION TITLE STYLE END   */
 
@@ -96,23 +100,19 @@ body {
 .portfolio-button {
   margin-right: 20px;
   margin-bottom: 0;
+  margin-top: 40px;
   text-align: center;
-  width: 200px;
+  width: 350px;
   border-style: solid;
   border-width: 4px;
-  box-shadow: 10px 10px 5px #000;
-  border-color:#f00;
-  background-color:#fff;
-  color:#000;
+  box-shadow: 10px 10px 5px var(--BLACK);
+  border-color:var(--SCARLET);
+  background-color:var(--WHITE);
+  color:var(--BLACK);
 }
 
 .portfolio-button:first-child {
-  width: 400px;
-}
-
-.portfolio-button:first-child::after {
-  content: "\a";
-  white-space: pre;
+  width: 800px;
 }
 
 .portfolio-button img {
@@ -124,15 +124,19 @@ body {
 }
 
 .portfolio-button > a:hover {
-  box-shadow: inset 0px 8px 8px 0px #000, 0 15px 15px #000;
+  box-shadow: inset 0px 8px 8px 0px var(--BLACK), 0 15px 15px var(--BLACK);
 }
 /* PORTFOLIO BUTTON STYLE END   */
 
-/* ABOUT ME STYLE START */
+/* ABOUT ME/CONTACT ME STYLE START */
 section#about-sect div.chapter > p, .contact-me {
   margin: 40px 0;
 }  
-/* ABOUT ME STYLE END   */
+
+.contact-me img {
+  width: 150px;
+}
+/* ABOUT ME/CONTACT ME STYLE END   */
 
 /* LARGE SCREEN STYLE START  */
   @media screen and (min-width:769px){
@@ -175,6 +179,11 @@ section#about-sect div.chapter > p, .contact-me {
     .portfolio-button {
       display: block;
       margin-bottom: 20px;
+      width: 200px;
+    }
+
+    .portfolio-button:first-child {
+      width: 400px;
     }
 
     .portfolio-button img {
