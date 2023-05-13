@@ -1,11 +1,7 @@
 /* VARIABLE CONTROL START */
 *{
-    --scarlet:#ff0000;
     --stripeheight:11px;
 }
-
-
-
 /* VARIABLE CONTROL END   */
 
 /* BODY STYLE START */
@@ -42,13 +38,13 @@ body {
 .black-stripe{
   height: var(--stripeheight);
   background-color:#000;
-}
+  }
 
-.white-stripe{
-height: calc(var(--stripeheight) + var(--stripeheight));
-width: 100%;
-background-color:#fff;
-}
+  .white-stripe{
+  height: calc(var(--stripeheight) + var(--stripeheight));
+  width: 100%;
+  background-color:#fff;
+  }
 /* COLOR STRIPE END   */
 
 /* NAV STYLE START */
@@ -128,9 +124,15 @@ background-color:#fff;
 }
 
 .portfolio-button > a:hover {
-  box-shadow: inset 0px 8px 8px 0px var(--scarlet), 0 0 15px var(--scarlet);
+  box-shadow: inset 0px 8px 8px 0px #000, 0 15px 15px #000;
 }
 /* PORTFOLIO BUTTON STYLE END   */
+
+/* ABOUT ME STYLE START */
+section#about-sect div.chapter > p, .contact-me {
+  margin: 40px 0;
+}  
+/* ABOUT ME STYLE END   */
 
 /* LARGE SCREEN STYLE START  */
   @media screen and (min-width:769px){
@@ -151,12 +153,7 @@ background-color:#fff;
   /* LARGE SCREEN STYLE END   */
 
 
-  section#about-sect div.chapter > p, .contact-me {
-    margin: 40px 0;
-  }  
-
-
-/* SMALL SCREEN STYLE START */
+  /* SMALL SCREEN STYLE START */
   @media screen and (max-width: 768px) {
     .sect-name {
       display: block;
