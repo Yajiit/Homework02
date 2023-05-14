@@ -22,8 +22,8 @@ The website is split into three sections:
 - Visual links to each completed work with the first being larger than the rest
 - Layout adaptive to window width
 
-# SCREENSHOT HERE
-
+## SCREENSHOT
+![Webpage Screenshot](./assets/images/Screenshot.jpg)
 
 ## LICENSE
 
